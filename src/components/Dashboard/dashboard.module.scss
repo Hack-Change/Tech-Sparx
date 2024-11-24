@@ -1,0 +1,18 @@
+.dashboard{
+    @apply h-full py-[75px] w-[365px] flex flex-col items-center;
+    .wrapper{
+        @apply flex flex-col items-start;
+    }
+    .navbar{
+        @apply mt-[80px] flex flex-col;
+        &>*{
+            @apply mb-[65px] font-semibold text-white opacity-50 text-[25px] w-fit;
+            &:last-child{
+                @apply mb-0;
+            }
+        }
+        .active{
+            @apply opacity-100;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.main{
+    @apply h-full;
+    .video{
+        @apply h-[65%] w-full object-cover;
+    }
+    .video__text{
+        @apply absolute top-10 left-10 text-[56px] text-white max-w-[75%] font-semibold;
+    }
+    .text{
+        @apply ml-[40px] font-semibold text-[45px] text-[#262A41];
+    }
+}
