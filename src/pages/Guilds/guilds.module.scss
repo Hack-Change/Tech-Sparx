@@ -1,0 +1,24 @@
+.wrapper{
+    @apply p-8 flex flex-col items-center h-full;
+    .title{
+        @apply font-semibold text-[36px];
+    }
+    .subtitle{
+        @apply font-semibold text-[28px] mt-[18px];
+    }
+    .discription{
+        @apply font-semibold text-[18px] opacity-50 mt-[18px];
+    }
+    .pagination{
+        @apply flex mt-[50px];
+        &>*{
+            @apply mr-[5px] last:mr-0 p-4 border-[1px] border-[#F1F1F1] font-semibold w-8 h-8 flex items-center justify-center rounded-[8px];
+        }
+        .active__btn{
+            @apply bg-[#FF0032] text-white;
+        }
+        .previous__btn:hover, .next__btn:hover{
+            @apply bg-[#FF0032] text-white duration-300;
+        }
+    }
+}
