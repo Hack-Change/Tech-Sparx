@@ -1,0 +1,26 @@
+.card{
+    @apply flex items-center py-[16px] rounded-[8px] border-[1px] duration-300 cursor-pointer first:mt-0 mt-[20px];
+    &:hover{
+        @apply bg-main;
+       .worker__name{
+            .svg{
+                @apply fill-white;
+            }
+            .name{
+                @apply text-white;
+            }
+       }
+       span{
+        @apply text-white;
+       }
+    }
+    .worker__name{
+        @apply flex items-center w-[24.5%] box-content pl-[8px];
+        .name{
+            @apply ml-4 font-medium text-[15px];
+        }
+    }
+    span{
+        @apply w-[16%] last:w-[27%];
+    }
+}

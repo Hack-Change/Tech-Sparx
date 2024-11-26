@@ -1,0 +1,30 @@
+.custom__checkbox{
+    @apply border-main border-[1px] text-main py-[8px] px-3 rounded-[8px];
+}
+ /* для элемента input c type="checkbox" */
+ .custom__checkbox>input {
+    @apply absolute z-[-1] opacity-0;
+  }
+
+  /* для элемента label, связанного с .custom__checkbox */
+  .custom__checkbox>span {
+    @apply inline-flex items-center select-none;
+  }
+
+  /* создание в label псевдоэлемента before со следующими стилями */
+  .custom__checkbox>span::before {
+    @apply inline-block w-[1em] h-[1em] shrink-0 grow-0 border-[1px] border-main rounded-[0.25em] mr-[0.5em] bg-no-repeat bg-center;
+    content: '';
+    background-size: 50% 50%;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .custom__checkbox>input:checked+span::before {
+    @apply bg-main border-main;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .custom__checkbox>input:disabled+span::before {
+    @apply bg-white;
+  }

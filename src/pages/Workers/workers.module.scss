@@ -1,0 +1,45 @@
+.workers__box{
+    @apply pt-[50px] px-[50px] flex flex-col h-[100%] items-center overflow-hidden;
+    .title{
+        @apply text-center font-bold text-[28px] opacity-80;
+    }
+    .list{
+        @apply mt-[35px] w-full h-full grow-[1];
+        .parametrs{
+            @apply flex items-center;
+            span{
+                @apply text-[#7D7D7D] text-[16px] w-[16%];
+            }
+            span:nth-child(1){
+                @apply w-[25%];
+            }
+            .btn__filter{
+                @apply w-[11%] border-2 border-main bg-transparent rounded-[8px] h-8 flex justify-center items-center duration-300;
+                &:hover{
+                  @apply bg-main;
+                  .svg{
+                    @apply stroke-white;
+                  }
+                }
+            }
+        }
+        .workers__list{
+            @apply mt-5;
+        }
+    }
+    .pagination{
+        @apply flex mt-[50px] mb-6 shrink-0;
+        &>*{
+            @apply mr-[5px] last:mr-0 p-4 border-[1px] border-[#F1F1F1] font-semibold w-8 h-8 flex items-center justify-center rounded-[8px];
+        }
+        .active__btn{
+            @apply bg-[#FF0032] text-white;
+        }
+        .previous__btn:hover, .next__btn:hover{
+            @apply bg-[#FF0032] text-white duration-300;
+        }
+    }
+}
+.unactive{
+    @apply blur-[2px];
+}

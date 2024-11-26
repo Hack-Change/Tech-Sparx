@@ -1,6 +1,6 @@
 import Main from './Main/Main.jsx';
 import MainPage from './pages/MainPage/MainPage.jsx';
-import Workers from './pages/MainPage/Workers/Workers.jsx';
+import Workers from './pages/Workers/Workers.jsx';
 import Guilds from './pages/Guilds/Guilds.jsx';
 
 import './index.css'

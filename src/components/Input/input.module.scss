@@ -1,0 +1,36 @@
+.wrapper{
+    @apply flex flex-col w-[45%];
+    &:focus-within .label{
+        @apply text-[#A3ACFD];
+    }
+    &:nth-child(3), &:nth-child(4){
+        @apply mt-[35px];
+    }
+    .label{
+        @apply font-medium text-[13px] mb-[5px] text-[#979797];
+    }
+    .input_wrapper{
+        @apply flex relative;
+        .input{
+            @apply  w-full font-normal text-[16px] py-[7px] outline-none border-b-2 text-[#979797] border-b-[#979797] placeholder:text-[#979797]
+                    bg-no-repeat bg-left p-[30px] focus:placeholder:text-transparent;   
+                    &:focus{
+                        @apply border-b-[#A3ACFD] text-[#A3ACFD];
+                        + .svg{
+                            @apply fill-[#A3ACFD];
+                        }
+                    }   
+        }
+        .input__mask{
+            outline: none !important;
+        }
+    
+        .svg {
+            @apply absolute top-1/2 -translate-y-1/2 fill-[#979797];
+            :first-child{
+                @apply fill-inherit;
+            }
+        }
+    }
+
+}
