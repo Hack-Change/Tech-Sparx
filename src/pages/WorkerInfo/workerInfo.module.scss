@@ -1,0 +1,81 @@
+
+.worker__info{
+    @apply grid grid-cols-[1fr_2fr] h-full;
+    .first__col{
+        @apply bg-main grid grid-rows-[2fr_3fr_1fr];
+        .img__container{
+            @apply border-b-2 border-white flex justify-center items-center;
+            .img__wrapper{
+                @apply flex flex-col items-center justify-center;
+                .svg svg{
+                    @apply w-[72px] h-[72px] mb-[20px];
+                    path{
+                        @apply fill-white;
+                    }
+                }
+                .name{
+                    @apply font-semibold text-[30px] text-white;
+                }
+                .guild{
+                    @apply text-[17px] text-white;
+                }
+            }
+        }
+        .projects__container{
+            p, span{
+                @apply text-white;
+            }
+            @apply pt-[20px] px-[30px];
+            .projects__title{
+                @apply text-[36px] font-semibold text-center;
+            }
+            .table{
+                @apply mt-[30px];
+                .parametrs{
+                    @apply border-b-[1px];
+                    span{
+                        @apply w-[50%] inline-block;
+                    }
+                }
+            }
+        }
+        .btn__container{
+            @apply flex justify-center items-center;
+            .btn__back{
+                span{
+                    @apply mb-[3px];
+                }
+                @apply leading-none border-[1px] border-white text-white font-semibold w-fit h-fit flex items-center px-[20px] py-[13px] rounded-[10px] duration-300;
+                svg{
+                    @apply mr-[30px];
+                }
+                &:hover{
+                    @apply bg-white text-main;
+                    path{
+                        @apply fill-main;
+                    }
+                }
+            }
+        }
+    }
+    .second__col{
+        @apply pt-[40px];
+        .info__title{
+            @apply text-[36px] font-semibold text-center;
+        }
+        .info__table{
+            @apply px-[100px] mt-[30px];
+            .skills__title{
+                @apply text-[36px] font-semibold text-center my-[50px];
+            }
+            .skills{
+                .skills__subtitle{
+                    @apply border-b-[1px] border-main text-center font-medium text-[20px];
+                }
+                .skills__box{
+                    @apply mt-[20px] flex justify-between;
+                }
+            }
+        }
+    }
+}

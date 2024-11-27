@@ -1,0 +1,12 @@
+.container{
+    @apply py-[30px] px-[80px];
+    .title{
+        @apply text-[36px] font-semibold text-center;
+    }
+    .guild{
+        @apply text-[28px] font-semibold text-center mt-[16px];
+    }
+    .subtitle{
+        @apply text-[18px] font-semibold text-center opacity-50 mt-[16px];
+    }
+}

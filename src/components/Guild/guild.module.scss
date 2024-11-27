@@ -3,7 +3,7 @@
     .guild{
         @apply bg-transparent border-[2px] border-[#FF0032] h-[90%] w-[90%] flex rounded-[20px] items-center justify-around cursor-pointer duration-300;
         .guildName{
-            @apply text-[#FF0032] text-[36px] font-semibold max-w-[30%] duration-200;
+            @apply text-[#FF0032] text-[36px] font-semibold max-w-[30%] duration-200 leading-[1];
         }
         &:hover{
             @apply scale-105 bg-[#FF0032];

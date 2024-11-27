@@ -1,0 +1,6 @@
+.info__box{
+    @apply border-b-[1px] my-[20px];
+    span{
+        @apply w-[50%] inline-block;
+    }
+}

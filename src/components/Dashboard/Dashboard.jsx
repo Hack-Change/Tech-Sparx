@@ -12,8 +12,8 @@ const Dashboard = () => {
         <Logo />
         <nav className={style.navbar}>
           <Link to='/' className={`${pathname.endsWith('main') && style.active}`}>Главная</Link>
-          <Link to='/workers' className={`${pathname.endsWith('workers') && style.active}`}>Сотрудники</Link>
-          <Link to='/guilds' className={`${pathname.endsWith('guilds') && style.active}`}>Гильдии</Link>
+          <Link to='/workers' className={`${(pathname.endsWith('workers') || pathname.includes('workers')) && style.active}`}>Сотрудники</Link>
+          <Link to='/guilds' className={`${(pathname.endsWith('guilds') || pathname.includes('guilds')) && style.active}`}>Гильдии</Link>
         </nav>
       </div>
     </div>
